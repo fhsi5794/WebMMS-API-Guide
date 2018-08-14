@@ -1,3 +1,7 @@
+---
+description: WebMMS error codes
+---
+
 # Error Codes
 
 | Code | Message |
