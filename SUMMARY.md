@@ -1,14 +1,16 @@
-# Summary
+# Table of contents
+
+* [Introduction](README.md)
 
 ## Overview
 
-* [WebMMS](README.md)
+* [WebMMS](overview/readme.md)
 
 ## WebMMS API
 
-* [System Diagram](systemdiagram.md)
-* [List of API](listofapi.md)
-* [Function List](functionlist.md)
-* [Commands](command.md)
-* [Error Codes](errorcode.md)
+* [System Diagram](webmms-api/systemdiagram.md)
+* [List of API](webmms-api/listofapi.md)
+* [Function List](webmms-api/functionlist.md)
+* [Commands](webmms-api/command.md)
+* [Error Codes](webmms-api/errorcode.md)
 
