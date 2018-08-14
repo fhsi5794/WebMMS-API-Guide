@@ -1,7 +1,7 @@
 # WebMMS
 
 ---
-![](/assets/webMMS.png)
+![](/assets/WebMMS.png)
 
 
 
