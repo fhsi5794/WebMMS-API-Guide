@@ -2,7 +2,7 @@
 description: WebMMS APIs
 ---
 
-# List of API
+# List of APIs
 
 | Command | Description |
 | :--- | :--- |
