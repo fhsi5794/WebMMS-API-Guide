@@ -6,7 +6,7 @@ description: WebMMS error codes
 
 
 
-|  |  |
+| Error Code | Error Message |
 | :--- | :--- |
 | 0 | Ok |
 | -10501 | Invalid data |
