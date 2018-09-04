@@ -87,22 +87,22 @@
   Example:
 
   ```javascript
-  nearby: query nearby motebus device from mCenter
+  //nearby: query nearby motebus device from mCenter
    var WebMMS = new MMS(‘myapp’,wsurl);
    WebMMS.StateMMS( 'nearby', '', '', 
     function(devlist){ 
       console.log('nearby: list=%s', JSON.stringify(devlist));
     }
   ); 
-  get device: get my device information 
+  //get device: get my device information 
     var WebMMS = new MMS(‘myapp’,wsurl);
     WebMMS.StateMMS('get', 'device', '', 
      function(info){ 
        console.log('get device: info=%s', JSON.stringify(info)); 
-       //info: {DDN,EiOwner,EiName,EiType,EiTag,EiLog} 
+       //info: {DDN,EiOwner,EiName,EiType,EiTag,EiLoc} 
      } 
     ); 
-    set device: set my device information 
+    //set device: set my device information 
       var EiInfo = {"DDN":"","EiOwner":"","EiName":"eiHello","EiType":".mc","EiTag:"#hello","EiLoc":""}; 
       var WebMMS = new MMS(‘myapp’,wsurl); 
       WebMMS.StateMMS('set', 'device', EiInfo, 
