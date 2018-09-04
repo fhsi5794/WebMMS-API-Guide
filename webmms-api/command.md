@@ -119,7 +119,7 @@
   ```javascript
   target: target device
   func: xRPC function
-  args: arguments of function
+  arg: arguments of function
   cb: callback with return msg
   ```
 
@@ -131,10 +131,12 @@
   var arg = {"data":"Hello MMS"}; 
   var WebMMS = new MMS(‘myapp’,wsurl); 
   ...
-  WebMMS.CallMMS(app, target, func, args,
+  WebMMS.CallMMS(myapp, target, func, arg,
    function(result){
     console.log('CallMMS: result=%s', JSON.stringify(result));
     }  
   );
   ```
+
+
 
