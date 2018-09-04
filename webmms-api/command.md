@@ -103,7 +103,7 @@
      } 
     ); 
     set device: set my device information 
-      var EiInfo = {"DDN":"","EiOwner":"","EiName":"eiHello","EiType":".mc","EiTag:"#hello","EiLog":""}; 
+      var EiInfo = {"DDN":"","EiOwner":"","EiName":"eiHello","EiType":".mc","EiTag:"#hello","EiLoc":""}; 
       var WebMMS = new MMS(‘myapp’,wsurl); 
       WebMMS.StateMMS('set', 'device', EiInfo, 
        function(result) { 
