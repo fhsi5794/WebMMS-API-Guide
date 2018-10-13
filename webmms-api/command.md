@@ -36,7 +36,7 @@
    console.log('regWS OK %s', result.numUsers);
   } 
   var wsState = function(result){
-   console.log(WS error: %s', result); 
+   console.log('WS error: %s', result); 
   } 
   var regdOK = function(result){
    console.log('regtoCenter: %s', result.ErrMsg);
