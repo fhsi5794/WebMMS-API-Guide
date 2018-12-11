@@ -1,5 +1,5 @@
 ---
-description: Functions & Usage
+description: WebMMS API functions & usage
 ---
 
 # Functions & Usage
