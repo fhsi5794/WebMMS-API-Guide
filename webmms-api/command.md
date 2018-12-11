@@ -1,24 +1,36 @@
-# Commands & Usage
+---
+description: Functions & Usage
+---
 
-* **MMS**
+# Functions & Usage
 
-  Input:
+* **MMS**  
+
+
+  Input:  
+
 
   ```javascript
   app:     app name
   wsurl:   WebSocket server URL
   ```
 
-  Example:
+  
+  Example:  
+
 
   ```javascript
   var wsurl = ‘boss.ypcloud.com:8081’;
   WebMMS = new MMS(‘myapp’, wsurl);
   ```
 
-* **OpenMMS**
+\*\*\*\*
 
-  Input:
+* **OpenMMS**  
+
+
+  Input:  
+
 
   ```javascript
   regwsOK: callback after registering with WebSocket server
@@ -27,11 +39,13 @@
   rcveMsg: callback when the WebSocket receives a message
   ```
 
-  Example:
+  
+  Example:  
+
 
   ```javascript
   WebMMS = new MMS(‘myapp’,wsurl); 
-  WebMMS.OpenMMS( regwsOK, regdOK, wsState, rcveMsg ); 
+  WebMMS.OpenMMS(regwsOK, regdOK, wsState, rcveMsg); 
   var regwsOK = function(result){ 
    console.log('regWS OK %s', result.numUsers);
   } 
@@ -46,31 +60,36 @@
   }
   ```
 
-* **SendMMS**
-* Input:
+\*\*\*\*
 
-  ```javascript
-  target: target device
-  data: data to be sent
-  cb: callback with return msg
-  ```
+* **SendMMS**  
+  
+  Input:  
+  
+  `target: target device  
+  data: data to be send  
+  cb: callback with return msg`
 
-  Example:
+  
+  ****Example:      
 
-  ```javascript
-  var target = 'ylobby';
-  var data = 'notify Hello 60 red 3'; 
-  var WebMMS = new MMS(‘myapp’,wsurl);
-  WebMMS.SendMMS(target, data,  
-    function(result){ 
-     console.log('sendMMS: result=%s', JSON.stringify(result)); 
-    } 
-  );
-  ```
+```javascript
+var target = 'ylobby';
+var data = 'notify Hello 60 red 3'; 
+var WebMMS = new MMS(‘myapp’,wsurl);
+WebMMS.SendMMS(target, data,  
+  function(result){ 
+   console.log('sendMMS: result=%s', JSON.stringify(result)); 
+  } 
+);
+```
 
-* **StateMMS**
 
-  Input:
+
+* **StateMMS**  
+  
+  Input:  
+
 
   ```javascript
   cmd: command 
@@ -84,7 +103,9 @@
   cb: callback with return msg
   ```
 
-  Example:
+  
+  Example:  
+
 
   ```javascript
   //nearby: query nearby motebus device from mCenter
@@ -112,9 +133,13 @@
       );
   ```
 
-* **CallMMS**
+\*\*\*\*
 
-  Input:
+* **CallMMS**  
+
+
+  Input:  
+
 
   ```javascript
   target: target device
@@ -123,7 +148,9 @@
   cb: callback with return msg
   ```
 
-  Example:
+  
+  Example:  
+
 
   ```javascript
   var target = 'jLobby'; 

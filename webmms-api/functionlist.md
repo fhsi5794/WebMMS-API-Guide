@@ -1,5 +1,5 @@
 ---
-description: WebMMS functions
+description: WebMMS API functions
 ---
 
 # Function List
